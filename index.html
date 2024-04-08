@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>UwU Cat Café</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Angkor&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Black&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee+Inline&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/FontAwesome.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/css/Beautiful-Alert.css">
+    <link rel="stylesheet" href="assets/css/css/beautiful-danger-alert.css">
+    <link rel="stylesheet" href="assets/css/css/Card-Store.css">
+    <link rel="stylesheet" href="assets/css/css/Collapse-card.css">
+    <link rel="stylesheet" href="assets/css/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/css/Footer-Dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="assets/css/css/jquery-sakura.css">
+    <link rel="stylesheet" href="assets/css/css/scroll.css">
+    <link rel="stylesheet" href="assets/css/css/Simple-Vertical-Navigation-Menu-v-10.css">
+    <link rel="stylesheet" href="assets/css/css/Toggle-Switches.css">
+    <link rel="stylesheet" href="assets/css/css/untitled.css">
+</head>
+
+<body style="color:var(--bs-gray-900);background:linear-gradient(white 0%, rgb(246,232,240) 33%, #d799bb 100%);">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center"><img class="img-fluid" src="assets/img/logo%20lgtv.png" style="width:390px;margin-left:47px;"></div>
+        </div>
+        <div class="row produtos" data-bss-disabled-mobile="true" data-aos="zoom-in" data-aos-duration="950" id="produtos">
+            <div class="col d-flex justify-content-center item-menu" id="sorvete" style="margin-right:-30px;">
+                <div class="card" id="item-menu-3" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width: 100%;height: 222px;background: url(&quot;assets/img/burguer.png&quot;) center / cover no-repeat;border-top-left-radius: 20px;border-top-right-radius: 20px;position: relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 40</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Sorvete<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;"><br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="picole" style="margin-right:-30px;">
+                <div class="card" id="item-menu-1" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;assets/img/sorvete%20novo.jpg&quot;) center / cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 40</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Cuzinho<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;"><br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="milkshake" style="margin-right:-30px;">
+                <div class="card" id="item-menu-52" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;assets/img/sorvete%20novo.jpg&quot;) center / cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 60</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">MiauShake<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;">Sabores: Chocolate e Banana</p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="cupcake" style="margin-right:-30px;">
+                <div class="card" id="item-menu-2" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width: 100%;height: 222px;background: url(&quot;assets/img/cupcake.jpg&quot;) center / cover no-repeat;border-top-right-radius: 20px;position: relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 45</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">CupCat<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;"><br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="bolo" style="margin-right:-30px;">
+                <div class="card" id="item-menu-4" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;bolo.png cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 42</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">CatCake<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;"><br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="aniverssario" style="margin-right:-30px;">
+                <div class="card" id="item-menu-35" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;sprinkled-and-me-instagram.png cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 550</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Bolo de Aniversário<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;"><br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="maca" style="margin-right:-30px;">
+                <div class="card" id="item-menu-5" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;maca_do_amor.jpg cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 40</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Maçã do Amor<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;">Maça com calda de açúcar<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="misto" style="margin-right:-30px;">
+                <div class="card" id="item-menu-6" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;misto.png cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div style="margin-bottom:-21px;">
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 40</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Misto<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;line-height:18px;">Pão de forma com manteiga, maionese caseira, queijo cheddar e presunto.<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="pao" style="margin-right:-30px;">
+                <div class="card" id="item-menu-8" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;pão de queijo.pnger no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 35</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Pão de Queijo<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;">Pão de queijo de 30g<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="cafe" style="margin-right:-30px;">
+                <div class="card" id="item-menu-7" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;cafe novo.jpgover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div style="margin-bottom:-17px;">
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 55</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Cat Café</h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;">Nosso café com a receita secreta da UwU<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="batata" style="margin-right:-30px;">
+                <div class="card" id="item-menu-26" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;fritas-1.png cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div style="margin-bottom:-17px;">
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 50</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Batata Frita</h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;">Batata frita crocante</p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="burguer" style="margin-right:-30px;">
+                <div class="card" id="item-menu-9" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;burguer.png cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div style="margin-bottom:-17px;">
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 80</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">CatBurguer</h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;line-height:17px;">250g de carne, queijo cheddar, bacon e maionese caseira<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="hotdog" style="margin-right:-30px;">
+                <div class="card" id="item-menu-38" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;hotdog uwu.pngover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div style="margin-bottom:-17px;">
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 60</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Chilli Dog</h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;line-height:17px;">Pão, salsicha, ketchup e mostarda</p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="espetinho" style="margin-right:-30px;">
+                <div class="card" id="item-menu-10" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;espetinho.png cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 55</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Espetinho de Gado<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;line-height:17px;margin-bottom:0px;">Espetinho misto de carne, frango e vegetais<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="coxa" style="margin-right:-30px;">
+                <div class="card" id="item-menu-11" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;coxa.png cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 60</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Coxa de Frango</h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;">Coxa de frango assada e temperada<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="file" style="margin-right:-30px;">
+                <div class="card" id="item-menu-16" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;file.jpg cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 70</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Filé Miau<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;margin-bottom:0px;line-height:17px;">Bife de carne bovina com molho barbecue<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="pipoca" style="margin-right:-30px;">
+                <div class="card" id="item-menu-12" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;pipoca.pngcover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;padding-bottom:20px;">
+                        <div style="margin-bottom:-17px;">
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 30</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Pipoca</h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;">Pipoca salgada<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="suco" style="margin-right:-30px;">
+                <div class="card" id="item-menu-17" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;suco.png cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 25</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Sucos<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;">Copo de 250ml<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="coco" style="margin-right:-30px;">
+                <div class="card" id="item-menu-19" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;Agua_de_coco.jpg cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 35</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Água de coco<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;">Garrafa de 250ml<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="agua" style="margin-right:-30px;">
+                <div class="card" id="item-menu-18" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;agua.png cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 25</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Garrafa de Água<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;">Garrafa de 500ml<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="tonica" style="margin-right:-30px;">
+                <div class="card" id="item-menu-20" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;agua_tonica.jpg cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 35</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Água Tônica<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;">Garrafa de 500ml<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="ursinho" style="margin-right:-30px;">
+                <div class="card" id="item-menu-21" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;URSO.png cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 70</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Ursinho de Pelúcia<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;line-height:17px;margin-bottom:0px;">Proporciona abraços quentinhos e sorrisos no rosto!<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="rosa" style="margin-right:-30px;">
+                <div class="card" id="item-menu-27" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;rosa4.png cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 50</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Rosa<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;"><br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="buque" style="margin-right:-30px;">
+                <div class="card" id="item-menu-28" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;boque.jpg cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 250</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Buquê de Flores<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;"><br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="suco-d" style="margin-right:-30px;display:none;">
+                <div class="card" id="item-menu-40" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;suco.png cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;font-size:16px;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 25</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Suco Natural</h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;line-height:17px;">Copo 250ml - Com ou sem adoçante</p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="cafe-d" style="margin-right:-30px;display:none;">
+                <div class="card" id="item-menu-41" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;cafe novo.jpgover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div style="margin-bottom:-17px;">
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 55</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Cat Café</h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;line-height:17px;">Nosso café com a receita secreta da UwU - Com ou sem adoçante<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="sorvete-d" style="margin-right:-30px;display:none;">
+                <div class="card" id="item-menu-42" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;sorvete novo.jpgover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 40</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Sorvete Light<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;line-height:17px;">Sorvete sabor iogurte desnatado com granola</p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="picole-d" style="margin-right:-30px;display:none;">
+                <div class="card" id="item-menu-43" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;picole fruta.pngover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 40</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Picolé de Frutas<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;"><br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="misto-d" style="margin-right:-30px;display:none;">
+                <div class="card" id="item-menu-39" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;misto integral.pngover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;font-size:16px;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 40</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Misto Integral</h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;line-height:17px;">Pão integral, manteiga light e queijo ricota<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="file-d" style="margin-right:-30px;display:none;">
+                <div class="card" id="item-menu-44" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;file.jpg cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 70</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Filé Miau<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;margin-bottom:0px;line-height:17px;">Bife de carne bovina grelhado, assado ou cozido<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="frango-d" style="margin-right:-30px;display:none;">
+                <div class="card" id="item-menu-45" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;coxa.png cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 60</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Coxa de Frango<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;margin-bottom:0px;line-height:17px;">Pedaços de frango assados, grelhados ou cozidos<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="espetinho-d" style="margin-right:-30px;display:none;">
+                <div class="card" id="item-menu-46" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;espetinho.png cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 55</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Espetinho de gado<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;margin-bottom:0px;margin-left:0px;line-height:17px;">Espetinho misto de carne, frango e vegetais grelhados<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="catburguer-d" style="margin-right:-30px;display:none;">
+                <div class="card" id="item-menu-47" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;burguer.png cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div style="margin-bottom:-17px;">
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 80</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">CatBurguer Integral</h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;line-height:17px;">Carne grelhada, salada, queijo ricota e pão integral de aveia<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="batata-d" style="margin-right:-30px;display:none;">
+                <div class="card" id="item-menu-48" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;batata assada.pngover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div style="margin-bottom:-17px;">
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 50</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Batata Assada</h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;line-height:17px;">Batata assada no azeite com tempero leve</p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="hotdog-d" style="margin-right:-30px;display:none;">
+                <div class="card" id="item-menu-49" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;hotdog uwu.pngover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div style="margin-bottom:-17px;">
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 60</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Chilli Dog Integral</h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;line-height:17px;">Salsicha de frango integral, mostarda zero açúcar e pão integral</p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="catcake-d" style="margin-right:-30px;display:none;">
+                <div class="card" id="item-menu-50" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;bolo.png cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 42</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Catcake Light<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;line-height:17px;">Sabores: 100% Cacau, Laranja, Abacaxi, Limão ou Maçã</p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" id="cupcat-d" style="margin-right:-30px;display:none;">
+                <div class="card" id="item-menu-51" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:427px;">
+                    <div style="width:100%;height:222px;background:url(&quot;cupcake.jpg auto no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 45</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">CupCat Light<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;line-height:17px;">Sabores: 100% Cacau, Laranja, Abacaxi, Limão ou Maçã</p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top:44px;">
+            <div class="col" style="text-align:center;margin-top:-37px;">
+                <h1 style="font-family:'Archivo Black', sans-serif;border-color:rgb(255,255,255);color:rgb(255,255,255);">KIT FESTA</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center item-menu" style="margin-right:-30px;">
+                <div class="card" id="item-menu-30" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:540px;">
+                    <div style="width:100%;height:222px;background:url(&quot;sphynx-cat-wearing-happy-birthday-hat-digital-14811445.png cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 1470</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Sphynx <br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;">10 Cat Cakes<br>10 Sorvetes<br>10 Batatas Fritas<br>10 Sucos<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" style="margin-right:-30px;">
+                <div class="card" id="item-menu-31" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:540px;">
+                    <div style="width:100%;height:222px;background:url(&quot;ca41a0c603a2cc44f56f9ea68c827456--birthday-stuff-birthday-parties.png cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 3400</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Angorá<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;">15 Sorvetes<br>15 Cup Cat<br>15 Pães de Queijo<br>15 Cat Burguers<br> 15 Sucos<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" style="margin-right:-30px;">
+                <div class="card" id="item-menu-32" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:540px;">
+                    <div style="width:100%;height:222px;background:url(&quot;surprised-fold-cat-in-a-party-birthday-hat-copy-space-picture-id1346787021.pngover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 2000</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Savannah </h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;">10 maças do amor<br>10 catburgers<br>10 coxas de frango<br>10 Sucos&nbsp;<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" style="margin-right:-30px;">
+                <div class="card" id="item-menu-33" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:540px;">
+                    <div style="width:100%;height:222px;background:url(&quot;inline_image_preview.pngcover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 4250</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Snowshoe </h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;">20 sorvetes<br>20 cupcakes<br>20 Files Miau<br>15 Batatas Fritas&nbsp;<br>30 sucos<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" style="margin-right:-30px;">
+                <div class="card" id="item-menu-29" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:540px;">
+                    <div style="width:100%;height:222px;background:url(&quot;gatinho chapeuzinho.pngover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 9000</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Persa<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;">50 Cat Cakes<br>50 CatBurguers<br>50 Filé Miau<br>50 Sucos<br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" style="margin-right:-30px;">
+                <div class="card" id="item-menu-36" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:540px;">
+                    <div style="width:100%;height:222px;background:url(&quot;gatinho metadinha.pngover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 15000</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Ragdoll<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;line-height:17px;font-size:16px;margin-bottom:0px;"><strong>50 Sucos&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;30 CatCake</strong><br><strong>50 Água Tônica&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;30 Sorvete</strong><br><strong>30 Filé Miau&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 30 CupCat</strong><br><strong>30 CatBurguer</strong><br><strong>30 Espetinho de Gado</strong><br><strong>30 Batata Frita</strong><br><strong>30 Maçã do Amor</strong><br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" style="margin-right:-30px;">
+                <div class="card" id="item-menu-37" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:540px;">
+                    <div style="width:100%;height:222px;background:url(&quot;gatinho velhinha.pngover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 20000</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Singapura<br></h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;line-height:17px;font-size:14px;margin-bottom:0px;"><strong>50 Sucos&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;30 Sorvete</strong><br><strong>50 Água Tônica&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;30 Pão de Queijo</strong><br><strong>30 Filé Miau&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 45 Água de coco</strong><br><strong>30 CatBurguer&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;40 CatCake</strong><br><strong>30 Espetinho de Gado&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;40 CupCat</strong><br><strong>30 Batata Frita&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;20 Rosa</strong><br><strong>30 Maçã do Amor</strong><br><strong>30 Sorvete</strong><br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center item-menu" style="margin-right:-30px;">
+                <div class="card" id="item-menu-34" style="width:10rem;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-bottom-left-radius:20px;min-width:300px;max-width:100%;margin:16px;border:4px none var(--bs-pink);box-shadow:0px 0px 20px 2px rgb(252,238,255);height:540px;">
+                    <div style="width:100%;height:222px;background:url(&quot;maxresdefault.png cover no-repeat;border-top-left-radius:20px;border-top-right-radius:20px;position:relative;"><img src="assets/img/gatin.png" style="width:52px;margin-top:174px;margin-left:211px;"></div>
+                    <div class="card-body d-flex flex-column justify-content-between" style="padding-bottom:20px;height:290px;background:#e6a3c1;border-radius:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;">
+                        <div>
+                            <h4 class="d-inline" id="preco-item" style="font-family:Angkor, serif;color:#ffffff;margin-bottom:8px;margin-top:22px;border-radius:0px;background:#6554be;margin-left:-41px;padding-left:10px;padding-right:10px;border-width:1px;border-color:var(--bs-pink);border-top-left-radius:22px;border-top-right-radius:0px;border-bottom-left-radius:22px;">$ 37000</h4>
+                            <h4 id="nome-item" style="text-align:left;margin-top:9px;font-size:24px;font-weight:bold;">Maine Coon</h4>
+                            <p id="desc-produto" style="font-family:'Source Sans Pro', sans-serif;color:var(--bs-white);font-weight:bold;line-height:17px;font-size:14px;margin-bottom:0px;"><strong>100 Files Miau&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 50 Maçã do Amor</strong><br><strong>100 Coxas de Frango&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;50 CatCake</strong><br><strong>100 Batatas Fritas&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 50 CupCat</strong><br><strong>50 Aguas</strong><br><strong>50 Aguas de coco</strong><br><strong>50 sucos</strong><br><strong>50 sorvetes</strong><br><br></p>
+                        </div>
+                        <div class="d-flex align-items-center" style="width:100%;"><strong style="color:var(--bs-white);">Quantidade</strong>
+                            <div class="d-flex float-end align-items-center align-items-xl-center" style="margin-left:37px;"><img class="img-fluid" id="btnDiminuir" src="assets/img/novelo%20-%20lgtv.png" style="width:45px;cursor:pointer;"><input type="number" class="float-end" id="qtd-produto" min="0" name="quantidade-item" style="width:47px;height:35px;border-radius:22px;text-align:center;font-weight:bold;margin-right:3px;margin-left:3px;border:double 1px transparent;background-image:linear-gradient(white, white), radial-gradient(circle at top left, #ff0000, #ff0017, #ff8900, #ffb200, #ffff00, #94ff00, #008000, #0000ff, #4b0082);background-origin:border-box;background-clip:content-box, border-box;" value="0"><img class="img-fluid" id="btnAumentar" src="assets/img/novelo%20+%20lgtv.png" style="width:45px;cursor:pointer;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom:48px;margin-top:44px;">
+            <div class="col text-center" style="margin-top:-46px;">
+                <h1 style="margin-top:12px;font-family:'Archivo Black', sans-serif;color:rgb(255,255,255);">Painel do vendedor</h1>
+            </div>
+            <div class="col-12">
+                <div class="row" style="text-align:center;margin-bottom:26px;border-radius:41px;border-width:4px;border-color:rgb(255,255,255);">
+                    <div class="col-8 text-center" style="text-align:center;width:100%;margin-top:-57px;">
+                        <h1 class="text-center invisible" style="font-family:'Source Sans Pro', sans-serif;font-weight:bold;color:rgb(255,255,255);">Dados da venda</h1><input type="text" id="nome-cliente" placeholder="Cliente" style="height:34px;border-radius:18px;width:244px;margin-bottom:10px;margin-top:18px;border-style:solid;border-color:var(--bs-purple);color:var(--bs-purple);padding-left:5px;"><input type="text" id="nome-funcionario" placeholder="Funcionário" style="height:34px;border-radius:18px;width:244px;margin-bottom:10px;margin-top:18px;border-style:solid;border-color:var(--bs-purple);color:var(--bs-purple);padding-left:5px;margin-left:57px;">
+                        <div style="background:#ffffff;border-radius:27px;margin-right:20%;margin-left:20%;">
+                            <div class="alert alert-success tada animated" role="alert" id="alertaErro" style="margin-top:17px;border-radius:27px;color:#800000;border-color:#430000;background:rgb(255,162,162);border-bottom-right-radius:0px;border-bottom-left-radius:0px;"><span><strong>Erro ao emitir Nota Fiscal!</strong><br>Nome do cliente ou funcionário não informado!</span></div>
+                            <div class="row" style="width:100%;height:100%;padding-top:8px;padding-bottom:6px;">
+                                <div class="col" style="color:var(--bs-purple);"><strong style="margin-right:161px;color:var(--bs-purple);">Cliente:&nbsp;<span id="dados-nome-cliente"></span></strong></div>
+                                <div class="col" style="text-align:center;"><strong style="color:var(--bs-purple);">Data da venda:&nbsp;<span id="dados-hora-venda"></span></strong></div>
+                            </div>
+                            <div class="col">
+                                <div class="row" style="width:100%;height:100%;padding-top:8px;padding-bottom:6px;">
+                                    <div class="col" style="color:var(--bs-purple);"><strong style="margin-right:511px;color:var(--bs-purple);">Funcionário:&nbsp;<span id="dados-nome-funcionario"></span></strong></div>
+                                </div>
+                            </div>
+                            <div class="row align-self-center" id="lista-compras" style="text-align:center;">
+                                <div class="col-12 dado-venda" id="dado-venda">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-hover table-sm">
+                                            <thead>
+                                                <tr>
+                                                    <th style="color:var(--bs-purple);">Itens</th>
+                                                    <th style="width:27.656px;color:var(--bs-purple);">Quantidade</th>
+                                                    <th style="width:210.938px;color:var(--bs-purple);">Valor</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="itens-tabela"></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col" style="text-align:center;"><strong style="color:var(--bs-purple);">Data da venda:&nbsp;<span id="dados-hora-venda"></span></strong></div>
+                            </div>
+                            <div class="row">
+                                <div class="col" id="dados-venda-total" style="text-align:right;margin-right:71px;"><strong style="font-size:23px;color:var(--bs-purple);">Total:&nbsp;<span id="total-venda">$0</span></strong></div>
+                            </div>
+                        </div>
+                        <h1 class="text-center invisible" style="font-family:'Source Sans Pro', sans-serif;font-weight:bold;color:rgb(255,255,255);">Dados da venda</h1>
+                        <h1 class="text-center invisible" style="font-family:'Source Sans Pro', sans-serif;font-weight:bold;color:rgb(255,255,255);">Dados da venda</h1>
+                    </div>
+                    <div class="col" style="margin-top:22px;">
+                        <h1 class="text-center" style="font-family:'Archivo Black', sans-serif;font-weight:bold;color:rgb(255,255,255);margin-top:-109px;margin-bottom:11px;">Nota Fiscal</h1><button class="btn btn-primary" id="btn-gerar" type="button" style="margin-top:12px;margin-bottom:17px;background:var(--bs-pink);font-weight:bold;margin-left:0px;margin-right:12px;">Gerar Nota</button><button class="btn btn-primary" id="btn-copiar" type="button" style="margin-top:12px;margin-bottom:17px;background:var(--bs-pink);font-weight:bold;margin-left:0px;margin-right:12px;">Copiar</button><button class="btn btn-primary" id="btn-zerar" type="button" style="margin-top:12px;margin-bottom:17px;background:var(--bs-pink);font-weight:bold;">Limpar</button>
+                        <div><textarea id="nota-fiscal" readonly="" style="width:257px;border-color:rgba(0,0,0,0);border-radius:20px;overflow-y:auto;resize:none;height:341px;"></textarea></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/js/modules.js"></script>
+    <script src="assets/js/js/elements.js"></script>
+    <script src="assets/js/js/Collapse-card.js"></script>
+    <script src="assets/js/js/cliente.js"></script>
+    <script src="assets/js/js/jquery-sakura.js"></script>
+    <script src="assets/js/js/pedido.js"></script>
+    <script src="assets/js/js/sakura.js"></script>
+    <script src="assets/js/js/dadosVenda.js"></script>
+</body>
+
+</html>
