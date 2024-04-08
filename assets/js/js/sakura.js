@@ -1,0 +1,4 @@
+// domReady
+$(function() {
+    $('html').sakura();
+});
