@@ -247,12 +247,16 @@ function atualizaDados(quantidadeInput, index, nomeProduto, precoItem) {
   totalVenda.text(`$ ${total}`);
 }
 
-btnZerar.on("click", () => {
-  produtos.each((index, item) => {
-    const quantidadeInput = $(item.querySelector("#qtd-produto"));
-    quantidadeInput.val(0);
+document
+  .getElementById("esconder-receita")
+  .addEventListener("click", function () {
+    var paragrafos = document.getElementsByClassName("desc-produto");
+
+    Array.from(paragrafos).forEach(function (paragrafo) {
+      if (paragrafo.style.display === "block") {
+        paragrafo.style.display = "none";
+      } else {
+        paragrafo.style.display = "block";
+      }
+    });
   });
-  listaCompras.empty();
-  totalVenda.text("$0");
-  controleItems = {};
-});
