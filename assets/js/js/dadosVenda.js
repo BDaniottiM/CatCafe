@@ -518,13 +518,36 @@ btnGerar.on("click", (e) => {
     if (itens.length == 0) {
       return;
     }
-    let textoNota = gerarTextoNota(
-      nomeCliente.val(),
-      nomeFuncionario.val(),
-      totalVenda.text(),
-      itens
-    );
-    notaFiscal.val(textoNota);
+    // let textoNota = gerarTextoNota(
+    //   nomeCliente.val(),
+    //   nomeFuncionario.val(),
+    //   totalVenda.text(),
+    //   itens
+    // );
+    //notaFiscal.val(textoNota);
+    let itemstring = ""
+    itens.forEach(function(item){
+        itemstring = itemstring+item.quantidade+"x "+item.nome+" - "+item.valor+"\n"
+    })
+    let jsonbase = { "username": "UWU Cat Café", "avatar_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjFzg7tNBHa8UkeQCQsZ6MWYnzlaeLdir29-YcF_mWNd-IUKmzkMsZ5d4wPtwdj4pVUY8&usqp=CAU", "content": "", "embeds": [{ "title": ":moneybag: REGISTRO DE VENDA", "color": 15115201, "description": "", "timestamp": window.moment().format('YYYY-MM-DDTHH:mm:ss.MSSZ'), "author": { "name": "" }, "image": {}, "thumbnail": { "url": "https://images-ext-1.discordapp.net/external/xUBOhpYGfQ-PfQPYgta32VWrvaNuBEu49U3q46rDe7Q/https/i.imgur.com/BzTSAAV.png?format=webp&quality=lossless&width=671&height=671" }, "footer": {}, "fields": [{ "name": ":heart_eyes_cat: Vendedor", "value": nomeFuncionario.val(), "inline": true }, { "name": ":kissing_cat: Cliente", "value": nomeCliente.val(), "inline": true }, { "name": ":ramen: Itens", "value": itemstring }, { "name": ":dollar: Valor Total", "value": totalVenda.text(), "inline": true }, { "name": ":bar_chart: Comissão Cat Café", "value": (totalVenda.text().replace('$','')*40/100), "inline": true }] }], "components": [] }
+    $.ajax({
+        type: 'POST',
+        url: 'https://discord.com/api/webhooks/1226763397165617203/DEJM_laPaq31u39kC_f5Td3JgaW0KAfYjVjjoFN6uEQwWNMBPPG9MWcXa3Pu90U8ptUm',
+        data: JSON.stringify(jsonbase),
+        success: function(data) {
+            var alertaSucesso = $("#alertaSucesso");
+            nomePedido.val("");
+            telefonePedido.val("")
+            enderecoPedido.val("");
+            observacoes.val("")
+            alertaSucesso.css("display", "block");
+            setTimeout(() => {
+              alertaSucesso.hide()
+            }, 15000);
+         },
+        contentType: "application/json",
+        dataType: 'json'
+    });
   }
 });
 
